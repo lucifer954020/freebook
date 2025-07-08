@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upload PDF</title>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+    input, button {
+      margin-top: 1rem;
+      padding: 0.5rem;
+    }
+    #responseMsg {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Upload a PDF Book</h1>
+  <form id="uploadForm">
+    <input type="text" name="description" placeholder="Enter PDF Title" required />
+    <input type="file" name="file" accept="application/pdf" required />
+    <button type="submit">Upload</button>
+  </form>
+  <p id="responseMsg"></p>
+</body>
+</html>
